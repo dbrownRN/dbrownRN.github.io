@@ -199,3 +199,8 @@ nav li {
   background-color: #d4af37;
   border-color: #030457;
 }
+.timeline-group {
+  background-color: rgba(3, 4, 87, 0.08);
+  border-radius: 8px;
+  padding: 24px 24px 8px 24px;
+}
