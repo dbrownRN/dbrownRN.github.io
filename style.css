@@ -81,6 +81,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 12px;
+  font-size: 2rem;
 }
 h2::before {
   content: "";
@@ -167,6 +168,14 @@ footer p {
 .project-card h3 {
   margin-top: 0;
   color: #030457;
+}
+.project-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  border: 1px solid #d4af37;
+  margin: 16px 0;
 }
 
 .timeline-item {
