@@ -19,8 +19,12 @@ main {
 
 header {
   background-color: #030457;
+  background-image: url('images/watermark.svg');
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 220px;
   padding: 40px 0 0 0;
-  border-bottom: 2px solid #d4af37
+  border-bottom: 2px solid #d4af37;
 }
 
 header h1 {
@@ -140,6 +144,12 @@ footer p {
   color: #ffb413;
   font-size: 14px;
   margin: 0;
+}
+.footer-icon {
+  height: 32px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 6px;
 }
 
 #skills ul {
