@@ -1,182 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Devin Brown RN, BSN — AI Data Science in Healthcare Portfolio</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <meta property="og:title" content="Devin Brown RN, BSN — AI Data Science in Healthcare Portfolio">
-<meta property="og:description" content="Portfolio showcasing AI and data science projects in healthcare, built by an ICU nurse transitioning into data science.">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Devin Brown RN, BSN — AI Data Science in Healthcare Portfolio">
-<meta name="twitter:description" content="Portfolio showcasing AI and data science projects in healthcare, built by an ICU nurse transitioning into data science.">
+  <meta property="og:description"
+    content="Portfolio showcasing AI and data science projects in healthcare, built by an ICU nurse transitioning into data science.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Devin Brown RN, BSN — AI Data Science in Healthcare Portfolio">
+  <meta name="twitter:description"
+    content="Portfolio showcasing AI and data science projects in healthcare, built by an ICU nurse transitioning into data science.">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<header>
-  <div class="container">
-    <h1>Devin Brown <span class="credentials">RN, BSN</span></h1>
-    <p>Welcome to my AI Data Science in Healthcare Portfolio. Here, you will find information about my projects, skills, and experience as an ICU nurse transitioning into data science.</p>
-    <a href="Devin-Brown-Resume.pdf" download class="resume-button">Download Resume</a>
-    <nav>
+  <header>
+    <div class="container">
+      <h1>Devin Brown <span class="credentials">RN, BSN</span></h1>
+      <p>Welcome to my AI Data Science in Healthcare Portfolio. Here, you will find information about my projects,
+        skills, and experience as an ICU nurse transitioning into data science.</p>
+      <a href="Devin-Brown-Resume.pdf" download class="resume-button">Download Resume</a>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="fade-in">
+      <h2>About Me</h2>
+      <p>I am a registered nurse with a Bachelor of Science in Nursing (BSN) as well as a Bachelor of Arts in Biology,
+        and a passion for leveraging data science to improve healthcare outcomes. My experience in the ICU has provided
+        me with a unique perspective on patient care, which I intend to enhance through data-driven insights.</p>
+    </section>
+    <section id="education" class="fade-in">
+      <h2>Education & Certifications</h2>
+      <div class="timeline-group">
+
+        <div class="timeline-item education">
+          <div class="timeline-header">
+            <h3>Applied AI and Data Science Certificate</h3>
+            <span class="timeline-date">Oct 2026</span>
+          </div>
+          <p class="timeline-employer">Massachusetts Institute of Technology (MIT)</p>
+          <ul>
+            <li>15-week program covering machine learning, deep learning, and AI-powered solutions for operational
+              problems; 16 Continuing Education Units (CEUs).</li>
+            <li>Capstone: Built, trained, and evaluated five convolutional neural network models (including VGG16
+              transfer learning) to detect malaria in blood-cell images; recommended model achieved 97.38% recall on
+              infected cells with about 40% fewer parameters than the top-scoring model.</li>
+            <li>Coursework in multi-agent AI systems and ethical data governance.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item education">
+          <div class="timeline-header">
+            <h3>Registered Nurse (RN) License</h3>
+            <span class="timeline-date">Active through 04/30/2027</span>
+          </div>
+          <p class="timeline-employer">State of Missouri</p>
+        </div>
+
+        <div class="timeline-item education">
+          <div class="timeline-header">
+            <h3>Bachelor of Science in Nursing (BSN), Accelerated Program</h3>
+            <span class="timeline-date">Dec 2021</span>
+          </div>
+          <p class="timeline-employer">Barnes-Jewish College Goldfarb School of Nursing, St. Louis, MO</p>
+          <ul>
+            <li>Graduated Cum Laude.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item education">
+          <div class="timeline-header">
+            <h3>Bachelor of Arts in Biology</h3>
+            <span class="timeline-date">May 2018</span>
+          </div>
+          <p class="timeline-employer">Westminster College, Fulton, MO</p>
+          <ul>
+            <li>3.72 GPA, Cum Laude, Honors College coursework.</li>
+            <li>Field study of invertebrates at a private reserve (Fulton, MO): trapped and identified specimens, built
+              spreadsheets and plots to track trends, and wrote a research paper on mimicry between two beetle species.
+            </li>
+            <li>Team experiment on essential oils and neurocognitive performance: co-designed the test, collected and
+              organized the data, and presented at Westminster's research conference.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="fade-in">
+      <h2>Projects</h2>
+      <article class="project-card">
+        <h3>Automated Malaria Detection using Deep Learning</h3>
+        <p>Building a lightweight deep learning model that can automatically detect malaria parasites in blood smear
+          images, to support faster diagnosis at the point of care.
+        </p>
+        <img src="images/malaria-sample-cells.png"
+          alt="Grid of labeled blood cell images showing parasitized and uninfected samples used to train the model"
+          class="project-image">
+        <img src="images/malaria-model-comparison.png"
+          alt="Bar chart comparing test accuracy and parasitized recall across five model architectures"
+          class="project-image">
+        <div class="stat-callout">
+          <div class="stat">
+            <span class="stat-number">97.38%</span>
+            <span class="stat-label">Recall on parasitized cells</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">40%</span>
+            <span class="stat-label">Fewer parameters than the top-scoring model</span>
+          </div>
+        </div>
+        <a href="projects/Notebook_Malaria_Detection_Full_Code_with_Executive_Summary.html">View Full Notebook &
+          Executive Summary</a>
+      </article>
+      <article class="project-card">
+        <h3>Save Racks Co. – Cause-Driven Apparel Store (launching soon)</h3>
+        <p>A hand-coded, data-driven online store for a Denver apparel brand that donates 5% of profits to charity.
+          I gathered the client's requirements and designed and built the site: 13 arcade-themed pages driven by JSON
+          data
+          files, with honest empty states instead of placeholder numbers, and a $0/month hosting plan.</p>
+        <img src="images/save-racks-home.webp"
+          alt="Save Racks Co. home page with a synthwave sunset header and arcade-style navigation"
+          class="project-image" width="1600" height="1000" loading="lazy">
+        <img src="images/save-racks-product.webp"
+          alt="Save Racks Co. product page showing a gray tee in an arcade cabinet frame with size buttons and a donation note"
+          class="project-image" width="1600" height="1053" loading="lazy">
+        <div class="stat-callout">
+          <div class="stat">
+            <span class="stat-number">100</span>
+            <span class="stat-label">Lighthouse accessibility score on every audited page</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">0.004</span>
+            <span class="stat-label">Layout shift after my fix (was 0.24; under 0.1 is good)</span>
+          </div>
+        </div>
+        <a href="projects/save-racks-case-study.html">Read the Full Case Study</a>
+      </article>
+    </section>
+    <section id="skills" class="fade-in">
+      <h2>Skills</h2>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
+        <li>Python Programming</li>
+        <li>Machine Learning & Deep Learning</li>
+        <li>Data Visualization</li>
+        <li>Healthcare Data Analysis</li>
+        <li>Statistical Analysis</li>
+        <li>Patient Safety and Quality Improvement</li>
+        <li>Communication and Collaboration</li>
+        <li>Clinical Decision-Making and Reasoning</li>
+        <li>Critical Thinking and Problem-Solving</li>
+        <li>Project Management and Leadership</li>
+        <li>Ethical and Legal Considerations in Healthcare</li>
+        <li>Website Development and Design</li>
       </ul>
-    </nav>
-  </div>
-</header>
+    </section>
+    <section id="experience" class="fade-in">
+      <h2>Experience</h2>
+      <div class="timeline-group">
 
-<main>
-  <section id="about" class="fade-in">
-    <h2>About Me</h2>
-    <p>I am a registered nurse with a Bachelor of Science in Nursing (BSN) as well as a Bachelor of Arts in Biology, and a passion for leveraging data science to improve healthcare outcomes. My experience in the ICU has provided me with a unique perspective on patient care, which I intend to enhance through data-driven insights.</p>
-  </section>
-  <section id="education" class="fade-in">
-  <h2>Education & Certifications</h2>
-  <div class="timeline-group">
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <h3>Clinical Preceptor / Registered Nurse – MSICU/TNICU</h3>
+            <span class="timeline-date">Oct 2022 – Dec 2025</span>
+          </div>
+          <p class="timeline-employer">Mercy Hospital – St. Louis, MO</p>
+          <ul>
+            <li>Provided critical care across four MSICU and Trauma Neuro ICU units (13–15 beds each) at a Level I
+              trauma center, caring for a wide range of critically ill and injured patients; floated to other hospital
+              units as needed.</li>
+            <li>Delivered CRRT with 1:1 nursing care, including hourly fluid-balance checks; certified in CRRT and TNCC.
+            </li>
+            <li>Monitored and interpreted continuous ventilator and hemodynamic data and titrated high-alert infusions
+              through Epic eMAR.</li>
+            <li>Precepted 9 new RNs through a structured 12-week orientation aligned with institutional quality metrics.
+            </li>
+            <li>Taught new nurses Epic documentation tools and workflows.</li>
+          </ul>
+        </div>
 
-  <div class="timeline-item education">
-    <div class="timeline-header">
-      <h3>Applied AI and Data Science Certificate</h3>
-      <span class="timeline-date">Oct 2026</span>
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <h3>Medical Assistant (CCMA)</h3>
+            <span class="timeline-date">Apr 2019 – Nov 2020</span>
+          </div>
+          <p class="timeline-employer">BJC HealthCare (Barnes West Medical Consultants) – St. Louis, MO</p>
+          <ul>
+            <li>Coordinated patient scheduling and flow for a multi-provider practice (3+ physicians); part of the first
+              group to adopt workflow changes introduced by a new practice manager.</li>
+            <li>Obtained prior authorizations from insurance payers for time-sensitive care, supporting continuity of
+              care.</li>
+            <li>Managed patient communication through the MyChart portal and electronic messaging systems.</li>
+            <li>During the hospital's Epic go-live week, provided peer-to-peer support to the cardiac unit at
+              Barnes-Jewish West County Hospital, answering staff questions and training them on EKG documentation and
+              its flow into the eMAR.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="closing-section fade-in">
+      <img src="images/headshot.webp" alt="Headshot of Devin Brown" class="headshot">
+      <blockquote class="closing-quote">
+        "From the bedside to the codebase — same mission, new toolkit."
+      </blockquote>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <img src="images/rod-icon.svg" alt="" class="footer-icon"> Email: <a
+          href="mailto:Devin.T.Brown@outlook.com">Devin.T.Brown@outlook.com</a> /
+        <a href="https://github.com/dbrownRN" target="_blank" rel="noopener noreferrer">GitHub</a> /
+        <a href="https://www.linkedin.com/in/devin-brown-890375239" target="_blank"
+          rel="noopener noreferrer">LinkedIn</a>
+      </div>
+      <p>&copy; 2026 Devin Brown. All rights reserved.</p>
     </div>
-    <p class="timeline-employer">Massachusetts Institute of Technology (MIT)</p>
-    <ul>
-      <li>15-week program covering machine learning, deep learning, and AI-powered solutions for operational problems; 16 Continuing Education Units (CEUs).</li>
-      <li>Capstone: Built, trained, and evaluated five convolutional neural network models (including VGG16 transfer learning) to detect malaria in blood-cell images; recommended model achieved 97.38% recall on infected cells with about 40% fewer parameters than the top-scoring model.</li>
-      <li>Coursework in multi-agent AI systems and ethical data governance.</li>
-    </ul>
-  </div>
-
-  <div class="timeline-item education">
-    <div class="timeline-header">
-      <h3>Registered Nurse (RN) License</h3>
-      <span class="timeline-date">Active through 04/30/2027</span>
-    </div>
-    <p class="timeline-employer">State of Missouri</p>
-  </div>
-
-  <div class="timeline-item education">
-    <div class="timeline-header">
-      <h3>Bachelor of Science in Nursing (BSN), Accelerated Program</h3>
-      <span class="timeline-date">Dec 2021</span>
-    </div>
-    <p class="timeline-employer">Barnes-Jewish College Goldfarb School of Nursing, St. Louis, MO</p>
-    <ul>
-      <li>Graduated Cum Laude.</li>
-    </ul>
-  </div>
-
-  <div class="timeline-item education">
-    <div class="timeline-header">
-      <h3>Bachelor of Arts in Biology</h3>
-      <span class="timeline-date">May 2018</span>
-    </div>
-    <p class="timeline-employer">Westminster College, Fulton, MO</p>
-    <ul>
-      <li>3.72 GPA, Cum Laude, Honors College coursework.</li>
-      <li>Field study of invertebrates at a private reserve (Fulton, MO): trapped and identified specimens, built spreadsheets and plots to track trends, and wrote a research paper on mimicry between two beetle species.</li>
-      <li>Team experiment on essential oils and neurocognitive performance: co-designed the test, collected and organized the data, and presented at Westminster's research conference.</li>
-    </ul>
-  </div>
-</div>
-</section>
-
-  <section id="projects" class="fade-in">
-  <h2>Projects</h2>
-  <article class="project-card">
-    <h3>Automated Malaria Detection using Deep Learning</h3>
-    <p>Building a lightweight deep learning model that can automatically detect malaria parasites in blood smear images, to support faster diagnosis at the point of care.
-</p>
-<img src="images/malaria-sample-cells.png" alt="Grid of labeled blood cell images showing parasitized and uninfected samples used to train the model" class="project-image">
-<img src="images/malaria-model-comparison.png" alt="Bar chart comparing test accuracy and parasitized recall across five model architectures" class="project-image">
-    <div class="stat-callout">
-  <div class="stat">
-    <span class="stat-number">97.38%</span>
-    <span class="stat-label">Recall on parasitized cells</span>
-  </div>
-  <div class="stat">
-    <span class="stat-number">40%</span>
-    <span class="stat-label">Fewer parameters than the top-scoring model</span>
-  </div>
-</div>
-  <a href="projects/Notebook_Malaria_Detection_Full_Code_with_Executive_Summary.html">View Full Notebook & Executive Summary</a>
-  </article>
-</section>
-  <section id="skills" class="fade-in">
-    <h2>Skills</h2>
-    <ul>
-      <li>Python Programming</li>
-      <li>Machine Learning & Deep Learning</li>
-      <li>Data Visualization</li>
-      <li>Healthcare Data Analysis</li>
-      <li>Statistical Analysis</li>
-      <li>Patient Safety and Quality Improvement</li>
-      <li>Communication and Collaboration</li>
-      <li>Clinical Decision-Making and Reasoning</li>
-      <li>Critical Thinking and Problem-Solving</li>
-      <li>Project Management and Leadership</li>
-      <li>Ethical and Legal Considerations in Healthcare</li>
-      <li>Website Development and Design</li>
-    </ul>
-  </section>
-  <section id="experience" class="fade-in">
-  <h2>Experience</h2>
-  <div class="timeline-group">
-
-  <div class="timeline-item">
-    <div class="timeline-header">
-      <h3>Clinical Preceptor / Registered Nurse – MSICU/TNICU</h3>
-      <span class="timeline-date">Oct 2022 – Dec 2025</span>
-    </div>
-    <p class="timeline-employer">Mercy Hospital – St. Louis, MO</p>
-    <ul>
-      <li>Provided critical care across four MSICU and Trauma Neuro ICU units (13–15 beds each) at a Level I trauma center, caring for a wide range of critically ill and injured patients; floated to other hospital units as needed.</li>
-      <li>Delivered CRRT with 1:1 nursing care, including hourly fluid-balance checks; certified in CRRT and TNCC.</li>
-      <li>Monitored and interpreted continuous ventilator and hemodynamic data and titrated high-alert infusions through Epic eMAR.</li>
-      <li>Precepted 9 new RNs through a structured 12-week orientation aligned with institutional quality metrics.</li>
-      <li>Taught new nurses Epic documentation tools and workflows.</li>
-    </ul>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-header">
-      <h3>Medical Assistant (CCMA)</h3>
-      <span class="timeline-date">Apr 2019 – Nov 2020</span>
-    </div>
-    <p class="timeline-employer">BJC HealthCare (Barnes West Medical Consultants) – St. Louis, MO</p>
-    <ul>
-      <li>Coordinated patient scheduling and flow for a multi-provider practice (3+ physicians); part of the first group to adopt workflow changes introduced by a new practice manager.</li>
-      <li>Obtained prior authorizations from insurance payers for time-sensitive care, supporting continuity of care.</li>
-      <li>Managed patient communication through the MyChart portal and electronic messaging systems.</li>
-      <li>During the hospital's Epic go-live week, provided peer-to-peer support to the cardiac unit at Barnes-Jewish West County Hospital, answering staff questions and training them on EKG documentation and its flow into the eMAR.</li>
-    </ul>
-  </div>
-</div>
-</section>
-<section class="closing-section fade-in">
-  <img src="images/headshot.webp" alt="Headshot of Devin Brown" class="headshot">
-  <blockquote class="closing-quote">
-    "From the bedside to the codebase — same mission, new toolkit."
-  </blockquote>
-</section>
-</main>
-<footer>
-  <div class="container">
-    <div class="footer-links">
-    <img src="images/rod-icon.svg" alt="" class="footer-icon"> Email: <a href="mailto:Devin.T.Brown@outlook.com">Devin.T.Brown@outlook.com</a> /
-      <a href="https://github.com/dbrownRN" target="_blank" rel="noopener noreferrer">GitHub</a> /
-      <a href="https://www.linkedin.com/in/devin-brown-890375239" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    </div>
-    <p>&copy; 2026 Devin Brown. All rights reserved.</p>
-  </div>
-</footer>
-<script src="script.js"></script>
+  </footer>
+  <script src="script.js"></script>
 </body>
+
 </html>

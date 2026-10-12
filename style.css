@@ -5,6 +5,7 @@ body {
   background-color: #f5f1e8;
   line-height: 1.6;
 }
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -33,6 +34,7 @@ header h1 {
   font-size: 2.75rem;
   letter-spacing: 0.5px;
 }
+
 h1 .credentials {
   font-size: 0.4em;
   font-weight: normal;
@@ -65,20 +67,22 @@ header nav a {
 }
 
 header nav a:hover {
-    background-color: rgba(255, 255, 255, 0.12);
+  background-color: rgba(255, 255, 255, 0.12);
 }
+
 nav a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #300cd1;
-    font-family:'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 0.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #300cd1;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.5px;
 }
+
 nav a:hover {
-    text-decoration: underline;
-    color: #e4a00f;
+  text-decoration: underline;
+  color: #e4a00f;
 }
 
 section {
@@ -94,14 +98,15 @@ h2 {
   gap: 12px;
   font-size: 2rem;
 }
+
 h2::before {
   content: "";
   display: inline-block;
-    width: 18px;
-    height: 18px;
-    background-color: #d4af37;
-    border-radius: 50% 50% 50% 0;
-    transform: rotate(225deg);
+  width: 18px;
+  height: 18px;
+  background-color: #d4af37;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(225deg);
   font-size: 1.5rem;
   margin-top: 16px;
 }
@@ -117,6 +122,7 @@ nav ul {
 nav li {
   display: inline-block;
 }
+
 footer {
   background-color: #030457;
   padding: 30px 0;
@@ -146,6 +152,7 @@ footer p {
   font-size: 14px;
   margin: 0;
 }
+
 .footer-icon {
   height: 32px;
   width: auto;
@@ -175,6 +182,7 @@ footer p {
   background-color: #d4af37;
   color: #030457;
 }
+
 .project-card {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   background-color: #ffffff;
@@ -183,10 +191,15 @@ footer p {
   padding: 20px;
 }
 
+.project-card+.project-card {
+  margin-top: 24px;
+}
+
 .project-card h3 {
   margin-top: 0;
   color: #030457;
 }
+
 .project-image {
   max-width: 100%;
   height: auto;
@@ -195,6 +208,7 @@ footer p {
   border: 1px solid #d4af37;
   margin: 16px 0;
 }
+
 .stat-callout {
   display: flex;
   gap: 24px;
@@ -227,6 +241,7 @@ footer p {
     gap: 12px;
   }
 }
+
 .timeline-item {
   border-left: 3px solid #d4af37;
   padding-left: 20px;
@@ -279,6 +294,7 @@ footer p {
 .timeline-item li {
   margin-bottom: 6px;
 }
+
 .timeline-item.education {
   border-left-color: #030457;
 }
@@ -287,11 +303,13 @@ footer p {
   background-color: #d4af37;
   border-color: #030457;
 }
+
 .timeline-group {
   background-color: rgba(3, 4, 87, 0.08);
   border-radius: 8px;
   padding: 24px 24px 8px 24px;
 }
+
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
@@ -299,6 +317,7 @@ footer p {
     gap: 12px;
   }
 }
+
 .resume-button {
   display: inline-block;
   background-color: #ffb413;
@@ -314,6 +333,7 @@ footer p {
 .resume-button:hover {
   background-color: #d4af37;
 }
+
 .closing-section {
   display: flex;
   align-items: center;
@@ -346,6 +366,7 @@ footer p {
     text-align: center;
   }
 }
+
 .fade-in {
   opacity: 0;
   transform: translateY(30px);

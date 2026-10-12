@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save Racks Co. Case Study | Devin Brown RN, BSN</title>
+  <meta name="description"
+    content="Case study: a hand-coded, data-driven online store for a Denver apparel brand that donates 5% of profits to charity.">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <meta property="og:title" content="Save Racks Co. Case Study | Devin Brown RN, BSN">
+  <meta property="og:description"
+    content="Case study: a hand-coded, data-driven online store for a Denver apparel brand that donates 5% of profits to charity.">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .case-header h1 {
+      font-size: 2.25rem;
+    }
+
+    .case-header .credentials {
+      white-space: nowrap;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin: 24px 0;
+      color: #f5f1e8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-link:hover,
+    .back-link:focus-visible {
+      color: #ffb413;
+    }
+
+    .case-facts {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      border: 1px solid #030457;
+      border-radius: 8px;
+      margin: 24px 0;
+    }
+
+    .case-facts th,
+    .case-facts td {
+      text-align: left;
+      vertical-align: top;
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(3, 4, 87, 0.15);
+    }
+
+    .case-facts th {
+      width: 120px;
+      color: #030457;
+    }
+
+    .case-figure {
+      margin: 24px 0;
+    }
+
+    .case-figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      border: 1px solid #d4af37;
+    }
+
+    .case-figure figcaption {
+      font-size: 14px;
+      color: #444;
+      margin-top: 8px;
+    }
+
+    .figure-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+
+    @media (max-width: 600px) {
+      .figure-pair {
+        grid-template-columns: 1fr;
+      }
+
+      .case-facts th {
+        width: 84px;
+        padding-right: 8px;
+      }
+    }
+
+    .case-note {
+      background-color: rgba(3, 4, 87, 0.06);
+      border-left: 4px solid #ffb413;
+      border-radius: 4px;
+      padding: 16px 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="case-header">
+    <div class="container">
+      <h1>Save Racks Co. <span class="credentials">CASE STUDY</span></h1>
+      <p>A data-driven online store for a small Denver apparel brand that gives back.</p>
+      <br>
+      <a class="back-link" href="../index.html#projects">&larr; Back to portfolio</a>
+    </div>
+  </header>
+
+  <main>
+    <table class="case-facts">
+      <tr>
+        <th scope="row">Role</th>
+        <td>Sole developer: requirements, design, front-end build, QA</td>
+      </tr>
+      <tr>
+        <th scope="row">Client</th>
+        <td>Save Racks Co., a two-owner Denver business selling cause-awareness apparel, with 5% of profits going to
+          charity, starting with breast cancer research</td>
+      </tr>
+      <tr>
+        <th scope="row">Timeline</th>
+        <td>October 2026, about one week from first meeting to a launch-ready site</td>
+      </tr>
+      <tr>
+        <th scope="row">Built with</th>
+        <td>HTML, CSS, JavaScript (no frameworks), JSON data files, Git and GitHub</td>
+      </tr>
+      <tr>
+        <th scope="row">Status</th>
+        <td>Launching soon: checkout and hosting go live once the client's payment account is set up</td>
+      </tr>
+    </table>
+
+    <figure class="case-figure">
+      <img src="../images/save-racks-home.webp" width="1600" height="1000"
+        alt="Save Racks Co. home page with a synthwave sunset header and arcade-style navigation">
+      <figcaption>The home page: an 8-bit arcade theme built entirely with HTML and CSS.</figcaption>
+    </figure>
+
+    <section>
+      <h2>The problem</h2>
+      <p>The owners were paying monthly for a Shopify store that was more than they needed: they sell a handful of
+        shirts, ship orders themselves, and wanted to spend $0 a month. They also had requirements a template couldn't
+        meet well:</p>
+      <ul>
+        <li><strong>Both owners need to update the site</strong> without learning a website builder.</li>
+        <li><strong>The charity pledge has to be accurate.</strong> A store that says "5% goes to charity" makes a
+          public promise, so every number shown has to be real.</li>
+        <li><strong>They wanted it to feel like them:</strong> playful, a little edgy, and hopeful, not like every
+          other store.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>My approach</h2>
+      <p><strong>1. Requirements before code.</strong> I interviewed the owner, then wrote a project plan, a brand
+        brief and a site map. I documented the open questions only he could answer (charity, shipping policy, donation
+        wording) instead of guessing. I also flagged the legal and trust issues a cause-based store carries: accurate
+        charity claims, consent before posting customer reviews (some may include health details), and never sharing
+        account passwords.</p>
+      <p><strong>2. Design around the brand.</strong> Together we chose an 8-bit arcade theme: products sit in arcade
+        cabinets, causes are game cartridges, the donation page is a High Scores board, the order page is "Stage
+        Clear!", and a broken link is "Game Over". I sketched mobile and desktop wireframes before writing any code.</p>
+      <p><strong>3. Build it so the data drives the page.</strong></p>
+      <figure class="case-figure">
+        <img src="../images/save-racks-product.webp" width="1600" height="1053" loading="lazy"
+          alt="Product page showing a gray tee in an arcade cabinet frame with size buttons, a Start button and a donation note">
+        <figcaption>The product page is one template: every product, size and price comes from a data file.</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Data-driven, and honest by design</h2>
+      <p>Instead of typing products and numbers into the HTML, all content lives in seven small JSON files (products,
+        causes, charities, donations, reviews, team and site settings). JavaScript reads them and builds each page.</p>
+      <ul>
+        <li><strong>The owners edit data, not code.</strong> Adding a shirt, marking a size sold out or connecting a
+          checkout link means changing one line in <code>products.json</code>.</li>
+        <li><strong>One source of truth.</strong> The donation rate is stored once, and every page that mentions it
+          reads it from there. Each shirt points to its charity by id, and donations point to charities the same way,
+          like tables joined in a database.</li>
+        <li><strong>No fake numbers.</strong> Until real donations and reviews exist, the site shows honest, on-theme
+          empty states ("INSERT COIN", "ENTER YOUR INITIALS") instead of placeholder totals or made-up testimonials.
+          When the owner chose to donate 5% of profits rather than of sales, I removed a per-shirt dollar figure the
+          site could no longer guarantee.</li>
+        <li><strong>Privacy first.</strong> The privacy page lists everything the site collects and what it doesn't.
+          Payment details are handled only by Stripe; the site never sees them.</li>
+      </ul>
+      <p class="case-note">As an ICU nurse, I learned that if it isn't true, it doesn't go in the chart. I held this
+        store's numbers to the same standard.</p>
+      <div class="figure-pair">
+        <figure class="case-figure">
+          <img src="../images/save-racks-high-scores.webp" width="1600" height="2070" loading="lazy"
+            alt="High Scores page with an Insert Coin empty state for donations and the Breast Cancer Research Foundation listed as the charity">
+          <figcaption>High Scores: real totals only, with an honest empty state until the first donation.</figcaption>
+        </figure>
+        <figure class="case-figure">
+          <img src="../images/save-racks-player-card.webp" width="760" height="820" loading="lazy"
+            alt="Player card for co-founder Ryan with a pixel art portrait, stat bars and a short bio">
+          <figcaption>Team "player cards" are generated from a data file, too.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>The challenge: learning JavaScript from scratch</h2>
+      <p>I came in knowing Python and R for data work, but not JavaScript or how a web page actually runs. The hardest
+        part wasn't syntax; it was <strong>where code lives and when it runs.</strong></p>
+      <ul>
+        <li><strong>Scope and placement.</strong> More than once my code was correct but did nothing, because I'd
+          pasted it inside a block that only runs on a click, or after an early <code>return</code> that exits first.
+          I learned to read the structure of a file before adding to it.</li>
+        <li><strong>Asynchronous data.</strong> Pages load their data with <code>fetch</code>, which returns later,
+          not instantly. I learned to wait for it with <code>async</code>/<code>await</code>, load several files at
+          once with <code>Promise.all</code>, and handle failures with <code>try</code>/<code>catch</code> so a bad
+          connection shows a friendly message instead of a blank page.</li>
+        <li><strong>Guard clauses.</strong> Every page checks for the unexpected first: a product link with a bad id,
+          an item that isn't released yet, missing data. Each case gets a clear on-theme message ("Gear not found").</li>
+        <li><strong>Debugging methodically.</strong> I learned to check the browser console, rule out a cached old
+          file before assuming the code was wrong, and change one thing at a time.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Quality and results</h2>
+      <div class="stat-callout">
+        <div class="stat">
+          <span class="stat-number">100</span>
+          <span class="stat-label">Lighthouse accessibility, best practices and SEO on every audited page</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">0.24 &rarr; 0.004</span>
+          <span class="stat-label">Product page layout shift after my fix (under 0.1 is good)</span>
+        </div>
+      </div>
+      <ul>
+        <li><strong>Lighthouse (Google's site audit), mobile:</strong> every audited page scored 95 to 99 for
+          performance.</li>
+        <li><strong>Fixed a real performance bug:</strong> the product page first scored 86 because content jumped
+          around while it loaded. I measured the shifts, reserved space for the content before it arrived, and brought
+          the page to 99.</li>
+        <li><strong>Accessible to more people:</strong> screen-reader labels and live announcements, a logical heading
+          order, alt text on every image, and a site-wide "FX" switch that turns off animations (it also follows the
+          device's reduced-motion setting).</li>
+        <li><strong>Tested like a release:</strong> three full-site QA sweeps at phone and desktop sizes (overflow,
+          broken links, missing files, edge cases), plus W3C HTML validation.</li>
+        <li><strong>Search and sharing ready:</strong> product structured data for Google, social share previews, and
+          the site can be installed on a phone like an app.</li>
+      </ul>
+      <div class="figure-pair">
+        <figure class="case-figure">
+          <img src="../images/save-racks-phone-home.webp" width="780" height="1688" loading="lazy"
+            alt="Save Racks Co. home page on a phone-sized screen with the menu button and Insert Coin button">
+          <figcaption>Mobile-first: every page was built for phones, then scaled up.</figcaption>
+        </figure>
+        <figure class="case-figure">
+          <img src="../images/save-racks-stage-clear.webp" width="1480" height="1490" loading="lazy"
+            alt="Order confirmation page with a pixel cat, the words Stage Clear and a mission report listing receipt, shipping time and donation">
+          <figcaption>The order-complete page buyers see after paying through Stripe.</figcaption>
+        </figure>
+      </div>
+      <p><strong>By the numbers:</strong> 13 pages, 11 JavaScript files, 7 data files, about 3,900 lines of code and 75
+        Git commits.</p>
+    </section>
+
+    <section>
+      <h2>How I worked</h2>
+      <p>I wrote the site's HTML, CSS and JavaScript myself, using an AI assistant (Claude) as a tutor and code reviewer:
+        it explained concepts, reviewed each change and helped me debug, one small step at a time. It also helped
+        produce some image assets, such as the pixel art icon and mascot. I kept a running log of every lesson
+        learned, and I used version control from day one, with separate private repositories for the code and the
+        planning documents.</p>
+    </section>
+
+    <section>
+      <h2>What's next</h2>
+      <ul>
+        <li>Launch: Stripe payment links, free hosting on Cloudflare, and a final audit on the live site</li>
+        <li>A donation-goal "boss health bar" once the owners set a goal</li>
+        <li>A shopping cart (a small serverless function with Stripe Checkout) if the product line grows</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What I took away</h2>
+      <p>The data model is the product. Once the content lived in clean data files, every page got simpler, and the
+        owners can keep it accurate without me.</p>
+      <a class="resume-button" href="../index.html#projects">&larr; Back to portfolio</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <img src="../images/rod-icon.svg" alt="" class="footer-icon"> Email: <a
+          href="mailto:Devin.T.Brown@outlook.com">Devin.T.Brown@outlook.com</a> /
+        <a href="https://github.com/dbrownRN" target="_blank" rel="noopener noreferrer">GitHub</a> /
+        <a href="https://www.linkedin.com/in/devin-brown-890375239" target="_blank"
+          rel="noopener noreferrer">LinkedIn</a>
+      </div>
+      <p>&copy; 2026 Devin Brown. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
